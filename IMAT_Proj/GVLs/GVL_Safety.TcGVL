@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <GVL Name="GVL_Safety" Id="{f8271d8d-c0b2-4e7b-82c7-58623e649ac4}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+    
+    SAFETYRUN AT %Q* : BOOL := TRUE;
+    ERRACK AT %Q* : BOOL;
+    //LOCALMODE AT %Q* : BOOL;
+    //NORMALMODE AT %Q* : BOOL :=TRUE; 
+   // SEARCHED_LOCKED AT %Q* : BOOL := FALSE;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
