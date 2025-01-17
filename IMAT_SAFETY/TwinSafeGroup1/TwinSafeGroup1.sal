@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<safetyApplication Crc="2843976906" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="258ce645-1257-4fe3-b0c5-28b00fee7411" name="" mapState="false" mapDiag="false" groupOrderId="0" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
+<safetyApplication Crc="2982892022" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="258ce645-1257-4fe3-b0c5-28b00fee7411" name="" mapState="true" mapDiag="true" groupOrderId="0" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
   <comments>
     <comment Id="24cecc0f-3d60-4ace-9c7d-405eb727bc16" text="This safeMon block says that if neither toggle swith is selected upon restart, Normal mode is selected. AKA system defaults to normal mode upon restart.&#xD;&#xA;" currentNetworkOrderId="3">
       <networks>
@@ -370,7 +370,7 @@
             </fBOpmode>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="84153d16-8d9d-4bdc-ae3f-2c159353c818">
-            <fBOr Id="e6421274-e5ee-446a-995d-1dfb544cd928" name="FBOr1" instanceName="FBOr1" orderOfExecution="14" mapState="false" mapDiag="false" functionName="safeOr">
+            <fBOr Id="e6421274-e5ee-446a-995d-1dfb544cd928" name="FBOr1" instanceName="FBOr1" orderOfExecution="15" mapState="false" mapDiag="false" functionName="safeOr">
               <inPorts>
                 <functioBlockHasInPorts Id="8b351b45-f649-4bf3-bb53-6c6b07f610d1">
                   <inPort Id="7da845b2-004c-4e5c-934e-ff0bf1a35eff" name="OrIn1" portName="OrIn1" portNum="2" objectIndex="8" varId="2" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
@@ -405,7 +405,7 @@
             </fBOr>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="de8abefd-3532-4344-95b5-d50f56c242c1">
-            <fBSr Id="468c2a1a-301a-4324-83ea-38e8f8820dd5" name="FBSr1" instanceName="FBSr3" orderOfExecution="15" mapState="false" mapDiag="false" functionName="safeSr">
+            <fBSr Id="468c2a1a-301a-4324-83ea-38e8f8820dd5" name="FBSr1" instanceName="FBSr3" orderOfExecution="16" mapState="false" mapDiag="false" functionName="safeSr">
               <inPorts>
                 <functioBlockHasInPorts Id="0bbfe9d2-bd35-46d0-9ad6-1dcdb65cdbfd">
                   <inPort Id="aacceabc-8004-4fb7-8516-f9fc3123e1f0" name="Set" portName="Set" portNum="2" objectIndex="8" varId="1" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
@@ -422,7 +422,7 @@
             </fBSr>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="cbfda82e-797d-4329-bc09-209294f463a1">
-            <fBSr Id="c8845af9-ffa1-4e52-8ab4-fa724ecb86a8" name="FBSr2" instanceName="FBSr4" orderOfExecution="16" mapState="false" mapDiag="false" functionName="safeSr">
+            <fBSr Id="c8845af9-ffa1-4e52-8ab4-fa724ecb86a8" name="FBSr2" instanceName="FBSr4" orderOfExecution="17" mapState="false" mapDiag="false" functionName="safeSr">
               <inPorts>
                 <functioBlockHasInPorts Id="b610b320-e409-4d6d-b915-db239377d5be">
                   <inPort Id="9b003830-77ce-438d-b2a0-abd8e034a0bc" name="Set" portName="Set" portNum="2" objectIndex="8" varId="1" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
@@ -439,7 +439,7 @@
             </fBSr>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="2f0917fc-c620-4993-a43d-e7a2926b2f94">
-            <fBMon Id="5ed5061d-8478-438c-9073-79c71eb6203c" name="FBMon1" instanceName="FBMon4" orderOfExecution="3" mapState="false" mapDiag="false" functionName="safeMon" safeInputsAfterDiscError="false" manualFunctionTest="false">
+            <fBMon Id="5ed5061d-8478-438c-9073-79c71eb6203c" name="FBMon1" instanceName="FBMon4" orderOfExecution="3" mapState="true" mapDiag="true" functionName="safeMon" safeInputsAfterDiscError="false" manualFunctionTest="false">
               <inPorts>
                 <functioBlockHasInPorts Id="dede6be6-500b-4b89-9f81-40d529c416fb">
                   <inPort Id="fc3bc5c3-a6d1-4634-bdc1-916660eeb785" name="Restart" portName="Restart" portNum="2" objectIndex="0" varId="1" filter="3" portDataType="1" maxDeviation="0" resetTime="0" />
@@ -494,7 +494,7 @@
             </fBMon>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="a61d040a-bcc0-4aba-a0fd-8a85aef463be">
-            <fBOr Id="d7400806-0998-4a10-9ff4-bfb776bb50ba" name="FBOr2" instanceName="FBOr3" orderOfExecution="17" mapState="false" mapDiag="false" functionName="safeOr">
+            <fBOr Id="d7400806-0998-4a10-9ff4-bfb776bb50ba" name="FBOr2" instanceName="FBOr3" orderOfExecution="18" mapState="false" mapDiag="false" functionName="safeOr">
               <inPorts>
                 <functioBlockHasInPorts Id="5c8f7805-cfb5-40a6-8763-20466855d207">
                   <inPort Id="ef7c5540-2977-4b25-a0a4-bcc0364ef8ce" name="OrIn1" portName="OrIn1" portNum="2" objectIndex="8" varId="2" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
@@ -535,7 +535,7 @@
             </fBOr>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="5560c405-716d-405b-a47a-3ca39a3b8552">
-            <fBOr Id="fd18ea5a-2ee7-4197-8a71-0474dcbc875a" name="FBOr21" instanceName="FBOr4" orderOfExecution="18" mapState="false" mapDiag="false" functionName="safeOr">
+            <fBOr Id="fd18ea5a-2ee7-4197-8a71-0474dcbc875a" name="FBOr21" instanceName="FBOr4" orderOfExecution="19" mapState="false" mapDiag="false" functionName="safeOr">
               <inPorts>
                 <functioBlockHasInPorts Id="45ac676e-897a-4fca-80a8-1d9ff329c595">
                   <inPort Id="80ed4275-68d5-4bf0-8324-b545f8f1be08" name="OrIn1" portName="OrIn1" portNum="2" objectIndex="8" varId="2" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
@@ -576,7 +576,7 @@
             </fBOr>
           </networkHasFunctionBlocks>
           <networkHasFunctionBlocks Id="cb12f885-5c0f-4b01-9645-1f519326b0c4">
-            <fBAnd Id="a828f41a-26c2-43c2-8b14-3c3f85ecacf5" name="FBAnd3" instanceName="FBAnd3" orderOfExecution="19" mapState="false" mapDiag="false" functionName="safeAnd">
+            <fBAnd Id="a828f41a-26c2-43c2-8b14-3c3f85ecacf5" name="FBAnd3" instanceName="FBAnd3" orderOfExecution="14" mapState="false" mapDiag="false" functionName="safeAnd">
               <inPorts>
                 <functioBlockHasInPorts Id="22601bb2-cda8-469d-b6c0-3a34c1c7266f">
                   <inPort Id="5d8999e7-c4ef-4a91-81ff-f1d16744da28" name="AndIn1" portName="AndIn1" portNum="2" objectIndex="8" varId="2" filter="3" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />

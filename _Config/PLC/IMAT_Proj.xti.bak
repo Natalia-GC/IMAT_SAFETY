@@ -1,9 +1,16 @@
 <?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.32" ClassName="CNestedPlcProjDef">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.11" ClassName="CNestedPlcProjDef">
 	<Project GUID="{341D2BCF-1EAB-4623-8061-4991340183E9}" Name="IMAT_Proj" PrjFilePath="..\..\IMAT_Proj\IMAT_Proj.plcproj" TmcFilePath="..\..\IMAT_Proj\IMAT_Proj.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="IMAT_Proj\IMAT_Proj.tmc" TmcHash="{0A98B794-2D41-85B4-5DF1-D653859D43FC}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="IMAT_Proj\IMAT_Proj.tmc">
 			<Name>IMAT_Proj Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>GVL_Safety.MONBLOCKSTATE</Name>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
 				<Var>
@@ -41,6 +48,7 @@
 	<Mappings>
 		<OwnerA Name="IMAT_Proj Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL6910)">
+				<Link VarA="PlcTask Inputs^GVL_Safety.MONBLOCKSTATE" VarB="Function Block Info Data^TwinSafeGroup1.Network3_OPMODE.FBMon4 Info Data^State"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.ERRACK" VarB="StandardOutputs^Standard In Var 1" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.SAFETYRUN" VarB="StandardOutputs^Standard In Var 4" Size="1"/>
 			</OwnerB>
