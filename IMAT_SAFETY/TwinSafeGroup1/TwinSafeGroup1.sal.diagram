@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<safetyApplicationLanguageDiagram Crc="3104281241" dslVersion="1.4.0.0" Id="a71fa8d7-9697-477c-88d6-e952b3074f79" absoluteBounds="0, 0, 27.875, 46.125" name="TwinSAFE">
+<safetyApplicationLanguageDiagram Crc="2585779295" dslVersion="1.4.0.0" Id="a71fa8d7-9697-477c-88d6-e952b3074f79" absoluteBounds="0, 0, 27.875, 46.125" name="TwinSAFE">
   <safetyApplicationMoniker name="/" />
   <nestedChildShapes>
     <networkSwimLane Id="b4f1ec8c-e548-44f5-8884-8f9b75d95863" isExpanded="false" absoluteBounds="0, 0, 27.875, 1.5">
@@ -966,18 +966,18 @@
             <inPortShapeMoniker Id="f4b08a8a-adb1-47c2-952d-e58350648726" />
           </nodes>
         </wiredLinkConnector>
-        <fBSrShape Id="9e51450d-e41c-4636-bcc3-8477a64c8a88" absoluteBounds="11.25, 28.325, 2.75, 1.85">
+        <fBSrShape Id="9e51450d-e41c-4636-bcc3-8477a64c8a88" absoluteBounds="11.875, 28.2, 2.75, 1.85">
           <fBSrMoniker name="//Network2/FBSr4" />
           <relativeChildShapes>
-            <inPortShape Id="35d2c3a8-8b53-4450-8cb3-a76246e66f53" absoluteBounds="11.17, 29.07, 0.15, 0.15">
+            <inPortShape Id="35d2c3a8-8b53-4450-8cb3-a76246e66f53" absoluteBounds="11.795, 28.945, 0.15, 0.15">
               <inPortMoniker name="//Network2/FBSr4/Set" />
               <relativeChildShapes />
             </inPortShape>
-            <inPortShape Id="dd2fb6b6-c1a0-4833-8d20-f3808c068416" absoluteBounds="11.17, 29.34, 0.15, 0.15">
+            <inPortShape Id="dd2fb6b6-c1a0-4833-8d20-f3808c068416" absoluteBounds="11.795, 29.215, 0.15, 0.15">
               <inPortMoniker name="//Network2/FBSr4/Reset" />
               <relativeChildShapes />
             </inPortShape>
-            <outPortShape Id="16c31c67-a7b2-4608-8e88-76fb6477100d" absoluteBounds="13.9, 29.61, 0.15, 0.15">
+            <outPortShape Id="16c31c67-a7b2-4608-8e88-76fb6477100d" absoluteBounds="14.525, 29.485, 0.15, 0.15">
               <outPortMoniker name="//Network2/FBSr4/SrOut" />
               <relativeChildShapes />
             </outPortShape>
@@ -1024,7 +1024,7 @@
             </outPortShape>
           </relativeChildShapes>
         </fBOrShape>
-        <wiredLinkConnector Id="8fb00bda-89b6-4a87-a43d-62c62d300691" edgePoints="[(11.17 : 29.415); (10.795 : 29.415); (10.795 : 29.89); (10.175 : 29.89)]" fixedFrom="Caller" fixedTo="Caller" color="0, 0, 0" thickness="0.01" expandedManuallyRouted="false">
+        <wiredLinkConnector Id="8fb00bda-89b6-4a87-a43d-62c62d300691" edgePoints="[(11.795 : 29.29); (11.42 : 29.29); (11.42 : 29.89); (10.175 : 29.89)]" fixedFrom="Caller" fixedTo="Caller" color="0, 0, 0" thickness="0.01" expandedManuallyRouted="false">
           <wiredLinkMoniker Id="8e66da23-6f81-4582-8f35-fd6cbec2db36" />
           <nodes>
             <inPortShapeMoniker Id="dd2fb6b6-c1a0-4833-8d20-f3808c068416" />

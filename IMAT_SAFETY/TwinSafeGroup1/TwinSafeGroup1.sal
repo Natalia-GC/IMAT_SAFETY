@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<safetyApplication Crc="2982892022" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="258ce645-1257-4fe3-b0c5-28b00fee7411" name="" mapState="true" mapDiag="true" groupOrderId="0" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
+<safetyApplication Crc="4091701877" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="258ce645-1257-4fe3-b0c5-28b00fee7411" name="" mapState="true" mapDiag="true" groupOrderId="0" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
   <comments>
     <comment Id="24cecc0f-3d60-4ace-9c7d-405eb727bc16" text="This safeMon block says that if neither toggle swith is selected upon restart, Normal mode is selected. AKA system defaults to normal mode upon restart.&#xD;&#xA;" currentNetworkOrderId="3">
       <networks>
@@ -1065,7 +1065,7 @@
                   <inPort Id="69c15445-250f-4a90-be2e-847392db50c1" name="AndIn2" portName="AndIn2" portNum="3" objectIndex="9" varId="3" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Make Contact (NO)" maxDeviation="0" resetTime="0" />
                 </functioBlockHasInPorts>
                 <functioBlockHasInPorts Id="cd1b93f4-424d-4960-9439-379ded09c44a">
-                  <inPort Id="b81029a8-1d16-4f86-8767-bd12e5b07b28" name="AndIn3" portName="AndIn3" portNum="4" objectIndex="10" varId="4" filter="2" portDataType="1" channelInterface="Deactivated" maxDeviation="0" resetTime="0" />
+                  <inPort Id="b81029a8-1d16-4f86-8767-bd12e5b07b28" name="AndIn3" portName="AndIn3" portNum="4" objectIndex="10" varId="4" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Make Contact (NO)" maxDeviation="0" resetTime="0" />
                 </functioBlockHasInPorts>
                 <functioBlockHasInPorts Id="e762175f-348a-4a23-ab7c-9f3cb06eadd1">
                   <inPort Id="b5476a0a-6bd4-4260-88a1-2dd2e434c489" name="AndIn4" portName="AndIn4" portNum="5" objectIndex="11" varId="5" filter="2" portDataType="1" channelInterface="Deactivated" maxDeviation="0" resetTime="0" />
@@ -1147,7 +1147,7 @@
                   <inPort Id="41e1db41-0e80-4051-8de3-ba53a26296e5" name="AndIn2" portName="AndIn2" portNum="3" objectIndex="9" varId="3" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Make Contact (NO)" maxDeviation="0" resetTime="0" />
                 </functioBlockHasInPorts>
                 <functioBlockHasInPorts Id="308267c9-386d-4456-a6e5-2c50ca5359a2">
-                  <inPort Id="7e537261-82d6-4307-86ef-f797675afee9" name="AndIn3" portName="AndIn3" portNum="4" objectIndex="10" varId="4" filter="2" portDataType="1" channelInterface="Deactivated" maxDeviation="0" resetTime="0" />
+                  <inPort Id="7e537261-82d6-4307-86ef-f797675afee9" name="AndIn3" portName="AndIn3" portNum="4" objectIndex="10" varId="4" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Make Contact (NO)" maxDeviation="0" resetTime="0" />
                 </functioBlockHasInPorts>
                 <functioBlockHasInPorts Id="00bf5931-adf6-4b28-93ac-a933511429e3">
                   <inPort Id="46db2032-e558-4988-96c3-da4e8f354a1b" name="AndIn4" portName="AndIn4" portNum="5" objectIndex="11" varId="5" filter="2" portDataType="1" channelInterface="Deactivated" maxDeviation="0" resetTime="0" />
@@ -2716,6 +2716,24 @@
                     <functionBlockPort>
                       <fbPortUsageReferencesFunctionBlockPort Id="cae45a6c-a739-41c6-b1b9-e629a1b220b2">
                         <inPortMoniker name="//Network4/FBOr2/OrIn3" />
+                      </fbPortUsageReferencesFunctionBlockPort>
+                    </functionBlockPort>
+                  </fbPortUsage>
+                </variableUsagesHasUsages>
+                <variableUsagesHasUsages Id="59ac1e59-00f9-4dc1-832b-eb9662188fc1">
+                  <fbPortUsage Id="4cfd58cd-57e9-4475-9220-8ae6c06053af">
+                    <functionBlockPort>
+                      <fbPortUsageReferencesFunctionBlockPort Id="44f2df59-5f4c-4fcc-abae-d54eee7e630f">
+                        <inPortMoniker name="//Network4/FBAnd3/AndIn3" />
+                      </fbPortUsageReferencesFunctionBlockPort>
+                    </functionBlockPort>
+                  </fbPortUsage>
+                </variableUsagesHasUsages>
+                <variableUsagesHasUsages Id="8a07c9a4-807b-459a-81a9-4b24f93f57e6">
+                  <fbPortUsage Id="708ed732-7c5f-4700-b556-9c4e6b7472d8">
+                    <functionBlockPort>
+                      <fbPortUsageReferencesFunctionBlockPort Id="edfa2d59-e4e0-4cdd-837d-da4c581d630a">
+                        <inPortMoniker name="//Network4/FBAnd1/AndIn3" />
                       </fbPortUsageReferencesFunctionBlockPort>
                     </functionBlockPort>
                   </fbPortUsage>

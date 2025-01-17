@@ -55,22 +55,6 @@
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{91BA7A38-806B-5E06-59E6-F04F15D6B8FF}" AutoDeleteType="true">INFODATA_FB_5</Name>
-			<BitSize>16</BitSize>
-			<SubItem>
-				<Name>State</Name>
-				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
-				<BitSize>8</BitSize>
-				<BitOffs>0</BitOffs>
-			</SubItem>
-			<SubItem>
-				<Name>Diag</Name>
-				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
-				<BitSize>8</BitSize>
-				<BitOffs>8</BitOffs>
-			</SubItem>
-		</DataType>
-		<DataType>
 			<Name GUID="{1553EE7F-0490-4879-4F41-423085C83887}" AutoDeleteType="true">INFODATA_GRP_3</Name>
 			<BitSize>16</BitSize>
 			<SubItem>
@@ -97,7 +81,7 @@
 			<SyncMan>001000012600010001000000000000000001001026010000</SyncMan>
 			<SyncMan>001100012200010002000000000000000001001122010000</SyncMan>
 			<SyncMan>001221002400010003000000000000000200001224010000</SyncMan>
-			<SyncMan>001d27002000010004000000000000000200001d20010000</SyncMan>
+			<SyncMan>001d25002000010004000000000000000200001d20010000</SyncMan>
 			<SyncMan>002e00002400000003000000000000000000002e24000000</SyncMan>
 			<SyncMan>002f00002000000004000000000000000000002f20000000</SyncMan>
 			<Fmmu>0000000000000000001200020100000001000000060000000200000000000000</Fmmu>
@@ -154,9 +138,6 @@
 			<Pdo Name="Function Block Info Data" Index="#x1bf8" Flags="#x2011" SyncMan="3">
 				<Entry Name="TwinSafeGroup1.Network3_OPMODE.FBMon4 Info Data" Index="#x7000" Sub="#x01">
 					<Type GUID="{2B008623-51EE-EF6A-ACDE-0017707F5BB8}">INFODATA_FB_3</Type>
-				</Entry>
-				<Entry Name="TwinSafeGroup1.Network3_OPMODE.FBOpmode1 Info Data" Index="#x7000" Sub="#x02">
-					<Type GUID="{91BA7A38-806B-5E06-59E6-F04F15D6B8FF}">INFODATA_FB_5</Type>
 				</Entry>
 			</Pdo>
 			<Pdo Name="TwinSAFE Group Info Data" Index="#x1bfa" Flags="#x2011" SyncMan="3">
