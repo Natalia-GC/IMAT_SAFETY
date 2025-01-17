@@ -8,7 +8,7 @@
 				<Name>PlcTask Inputs</Name>
 				<Var>
 					<Name>GVL_Safety.MONBLOCKSTATE</Name>
-					<Type>BOOL</Type>
+					<Type>USINT</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
