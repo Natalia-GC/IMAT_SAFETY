@@ -131,7 +131,7 @@
 				<Entry Name="Standard In Var 4" Index="#x6000" Sub="#x02">
 					<Type>BIT</Type>
 				</Entry>
-				<Entry Name="Standard In Var 16" Index="#x6000" Sub="#x03">
+				<Entry Name="Standard In Var 17" Index="#x6000" Sub="#x03">
 					<Type>BIT</Type>
 				</Entry>
 				<Entry>

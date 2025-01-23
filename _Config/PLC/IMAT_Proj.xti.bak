@@ -22,7 +22,11 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_Safety.LC_OFF</Name>
+					<Name>GVL_Safety.MUTE_LC</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Safety.MUTE_ENABLING</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
@@ -54,6 +58,7 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL6910)">
 				<Link VarA="PlcTask Inputs^GVL_Safety.MONBLOCKSTATE" VarB="Function Block Info Data^TwinSafeGroup1.Network3_OPMODE.FBMon4 Info Data^State"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.ERRACK" VarB="StandardOutputs^Standard In Var 1" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_LC" VarB="StandardOutputs^Standard In Var 17" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.SAFETYRUN" VarB="StandardOutputs^Standard In Var 4" Size="1"/>
 			</OwnerB>
 		</OwnerA>

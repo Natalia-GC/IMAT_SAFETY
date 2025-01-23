@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Crc="4220871437" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project Crc="2473887945" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
@@ -16,7 +16,7 @@
     <IntProjName>IMAT_SAFETY</IntProjName>
     <IsNewCreated>false</IsNewCreated>
     <SPlcProjVersion>1.7.0.0</SPlcProjVersion>
-    <NextSdsId>17</NextSdsId>
+    <NextSdsId>19</NextSdsId>
     <DocuEditor>vdi83221</DocuEditor>
     <PlotDate>2025-01-14</PlotDate>
     <CompanyName>Beckhoff Automation &amp; Co. KG</CompanyName>
@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="GVLs\GVL1.sgvl" />
+    <None Include="TwinSafeGroup1\Alias Devices\MUTE_ENABLING.sds" />
+    <None Include="TwinSafeGroup1\Alias Devices\MUTE_LC.sds" />
     <None Include="TwinSafeGroup1\Alias Devices\RUN_SAFETY.sds" />
     <None Include="TwinSafeGroup1\Alias Devices\Term 10 %28EL1904%29 - Module 1 %28FSOES%29.sds" />
     <None Include="TwinSafeGroup1\Alias Devices\Term 12 %28EL1904%29 - Module 1 %28FSOES%29.sds" />

@@ -6,8 +6,9 @@ VAR_GLOBAL
     
     SAFETYRUN AT %Q* : BOOL := TRUE;
     ERRACK AT %Q* : BOOL;
+    MUTE_LC AT %Q* : BOOL := FALSE;
+    MUTE_ENABLING AT %Q* : BOOL := FALSE;
     MONBLOCKSTATE AT %I*: USINT;
-    //LC_OFF AT %Q* : BOOL;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
