@@ -29,6 +29,10 @@
 					<Name>GVL_Safety.MUTE_ENABLING</Name>
 					<Type>BOOL</Type>
 				</Var>
+				<Var>
+					<Name>GVL_Safety.UNMUTE_ENABLING</Name>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<UnrestoredVarLinks ImportTime="2025-01-07T11:10:33">
 				<OwnerA Name="OutputSrc" Prefix="TIPC^IMAT_Proj^IMAT_Proj Instance" Type="2">
@@ -61,6 +65,7 @@
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_ENABLING" VarB="StandardOutputs^Standard In Var 18" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_LC" VarB="StandardOutputs^Standard In Var 17" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.SAFETYRUN" VarB="StandardOutputs^Standard In Var 4" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_Safety.UNMUTE_ENABLING" VarB="StandardOutputs^Standard In Var 19" Size="1"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

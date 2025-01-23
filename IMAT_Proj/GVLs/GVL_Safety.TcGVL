@@ -8,6 +8,7 @@ VAR_GLOBAL
     ERRACK AT %Q* : BOOL;
     MUTE_LC AT %Q* : BOOL := FALSE;
     MUTE_ENABLING AT %Q* : BOOL := FALSE;
+    UNMUTE_ENABLING AT %Q* : BOOL;
     MONBLOCKSTATE AT %I*: USINT;
 END_VAR]]></Declaration>
   </GVL>
