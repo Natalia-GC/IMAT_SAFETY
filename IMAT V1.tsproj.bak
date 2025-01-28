@@ -16,7 +16,6 @@
 		</Safety>
 		<Io>
 			<Device File="Device 1 (EtherCAT).xti" Id="1"/>
-			<Device File="Device 4 (COM Port).xti" Id="4"/>
 		</Io>
 	</Project>
 	<Mappings>
