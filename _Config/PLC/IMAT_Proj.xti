@@ -1,6 +1,44 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.11" ClassName="CNestedPlcProjDef">
-	<Project GUID="{341D2BCF-1EAB-4623-8061-4991340183E9}" Name="IMAT_Proj" PrjFilePath="..\..\IMAT_Proj\IMAT_Proj.plcproj" TmcFilePath="..\..\IMAT_Proj\IMAT_Proj.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{732480A7-5392-0A1F-50AB-897A82278605}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..15] OF BYTE</Name>
+			<BitSize>128</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>16</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{59CB7A65-AEAB-E588-EB2A-AFE112B8A9C8}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..5] OF UINT</Name>
+			<BitSize>96</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{70838EB7-9AF3-BA34-A941-693C69294DD7}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..127] OF BOOL</Name>
+			<BitSize>1024</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>128</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{70838EB7-9AF3-BA34-A941-693C69294DE2}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..127] OF UINT</Name>
+			<BitSize>2048</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>128</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<Project GUID="{341D2BCF-1EAB-4623-8061-4991340183E9}" Name="IMAT_Proj" PrjFilePath="..\..\IMAT_Proj\IMAT_Proj.plcproj" TmcFilePath="..\..\IMAT_Proj\IMAT_Proj.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" CopyTmcToTarget="true" CopyTpyToTarget="false" SymbolicMapping="true">
 		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="1" TmcPath="IMAT_Proj\IMAT_Proj.tmc">
 			<Name>IMAT_Proj Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -9,6 +47,62 @@
 				<Var>
 					<Name>GVL_Safety.MONBLOCKSTATE</Name>
 					<Type>USINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.enSwitch</Name>
+					<Type>BYTE</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.alive</Name>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.buzzer</Name>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.connectionBoxAddress</Name>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.keySwitch</Name>
+					<Type>BYTE</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.Leds</Name>
+					<Type GUID="{732480A7-5392-0A1F-50AB-897A82278605}">ARRAY [0..15] OF BYTE</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.screenBrightness</Name>
+					<Comment><![CDATA[pushButton AT %I* : BYTE; 
+PushButtonLed AT %I* : BYTE; 
+pushSwitch AT %I* : BYTE; 
+pushSwitchLed AT %I* : BYTE; 
+rotSwitch AT %I* : BYTE; ]]></Comment>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.screenTimeout</Name>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.MuteLCfromHMI</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.TypePlate</Name>
+					<Comment><![CDATA[selSwitch AT %I* : BYTE; ]]></Comment>
+					<Type GUID="{59CB7A65-AEAB-E588-EB2A-AFE112B8A9C8}">ARRAY [0..5] OF UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.keys</Name>
+					<Type GUID="{70838EB7-9AF3-BA34-A941-693C69294DD7}">ARRAY [0..127] OF BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Pendant.keyCount</Name>
+					<Comment><![CDATA[handWheelPosition AT %I* : DINT; 
+handWheelPressed AT %I* : BOOL; ]]></Comment>
+					<Type GUID="{70838EB7-9AF3-BA34-A941-693C69294DE2}">ARRAY [0..127] OF UINT</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
@@ -31,6 +125,10 @@
 				</Var>
 				<Var>
 					<Name>GVL_Safety.UNMUTE_ENABLING</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Safety.UNMUTE_LC</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
@@ -66,6 +164,7 @@
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_LC" VarB="StandardOutputs^Standard In Var 17" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.SAFETYRUN" VarB="StandardOutputs^Standard In Var 4" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.UNMUTE_ENABLING" VarB="StandardOutputs^Standard In Var 19" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_Safety.UNMUTE_LC" VarB="StandardOutputs^Standard In Var 20" Size="1"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

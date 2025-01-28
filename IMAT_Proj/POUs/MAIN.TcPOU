@@ -3,7 +3,7 @@
   <POU Name="MAIN" Id="{98ae381b-1fae-4503-a3b8-1900850a68a0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-    
+   MuteLCfromHMI AT %I* : BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
