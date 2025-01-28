@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<safetyApplication Crc="3123228212" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="258ce645-1257-4fe3-b0c5-28b00fee7411" name="" mapState="true" mapDiag="true" groupOrderId="0" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
+<safetyApplication Crc="1613286912" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="258ce645-1257-4fe3-b0c5-28b00fee7411" name="" mapState="true" mapDiag="true" groupOrderId="0" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
   <comments>
     <comment Id="24cecc0f-3d60-4ace-9c7d-405eb727bc16" text="This safeMon block says that if neither toggle swith is selected upon restart, Normal mode is selected. AKA system defaults to normal mode upon restart.&#xD;&#xA;" currentNetworkOrderId="3">
       <networks>
@@ -64,7 +64,7 @@
         </commentReferencesNetworks>
       </networks>
     </comment>
-    <comment Id="a11fd371-c666-48a7-a3f3-17733ee004e1" text="This works but I need to add something so that you can choose to unmute the function without changing modes. Another HMI button most likely. SafeOr doesn't work with an unsafe input so this doesn't work." currentNetworkOrderId="5">
+    <comment Id="a11fd371-c666-48a7-a3f3-17733ee004e1" text=" SafeOr doesn't work with an unsafe input so I've had to use a safeAnd which is messy.&#xD;&#xA;&#xD;&#xA;THE MUTE ENABLING BUTTON IS CURRENTLY A PHYSICAL BUTTON" currentNetworkOrderId="5">
       <networks>
         <commentReferencesNetworks Id="5a74089b-1d8f-4fbf-9425-fc710de21b99">
           <networkMoniker name="//Network6" />
@@ -1408,7 +1408,7 @@
             <fBAnd Id="287025ec-44b9-41da-9472-b75e65a80e45" name="FBAnd1" instanceName="FBAnd11" orderOfExecution="34" mapState="false" mapDiag="false" functionName="safeAnd">
               <inPorts>
                 <functioBlockHasInPorts Id="b87ede6e-b8d0-456b-b8d5-d2824e354ca3">
-                  <inPort Id="a7383454-3c5e-46f8-bef4-e47ac908d65f" name="AndIn1" portName="AndIn1" portNum="2" objectIndex="8" varId="2" filter="3" portDataType="1" channelInterface="Activated" deactivate1="Make Contact (NO)" maxDeviation="0" resetTime="0" />
+                  <inPort Id="a7383454-3c5e-46f8-bef4-e47ac908d65f" name="AndIn1" portName="AndIn1" portNum="2" objectIndex="8" varId="2" filter="3" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
                 </functioBlockHasInPorts>
                 <functioBlockHasInPorts Id="0a6b68b9-29fe-4789-8c1c-a6106954a8fc">
                   <inPort Id="9d25e415-8230-468f-801a-00b6ecd09902" name="AndIn2" portName="AndIn2" portNum="3" objectIndex="9" varId="3" filter="2" portDataType="1" channelInterface="Activated" deactivate1="Break Contact (NC)" maxDeviation="0" resetTime="0" />
@@ -1973,11 +1973,11 @@
           <variableHasTargetUsages Id="b1f6ad0e-1a70-48b1-9f7a-219b00661483">
             <variableUsages Id="18df87b6-a94d-4cd9-a710-aee1d4839fe2">
               <usages>
-                <variableUsagesHasUsages Id="5c6c2e3e-95de-4e8c-a6ed-1f8c4b59f3c8">
-                  <fbPortUsage Id="b685c485-20af-4c75-9b82-3063e3738d3e">
+                <variableUsagesHasUsages Id="0e01d007-c734-45d3-9251-4b83cd50cec4">
+                  <fbPortUsage Id="c2059e71-24b2-4a95-aa94-93168d8a063d">
                     <functionBlockPort>
-                      <fbPortUsageReferencesFunctionBlockPort Id="d512ffa2-9667-47ce-8e73-829f97004f00">
-                        <inPortMoniker name="//Network1/FBMon1/EDM1" />
+                      <fbPortUsageReferencesFunctionBlockPort Id="5980c7a8-d0c9-4242-b03f-573f499e93b7">
+                        <inPortMoniker name="//Network3/FBEstop1/EDM1" />
                       </fbPortUsageReferencesFunctionBlockPort>
                     </functionBlockPort>
                   </fbPortUsage>
@@ -3352,15 +3352,6 @@
           <variableHasTargetUsages Id="09da4674-b3f0-4495-8c47-41264124dfdb">
             <variableUsages Id="a1687a6c-611b-4471-95dc-db8da0d67fdf">
               <usages>
-                <variableUsagesHasUsages Id="8bc8dd59-a998-4431-aec9-78fee20644bf">
-                  <fbPortUsage Id="625c8fb8-2138-4741-89cd-4ae8d36d63f6">
-                    <functionBlockPort>
-                      <fbPortUsageReferencesFunctionBlockPort Id="c4f7ec1e-ede5-42f5-81f3-7c91f106d58f">
-                        <inPortMoniker name="//Network6/FBAnd1/AndIn1" />
-                      </fbPortUsageReferencesFunctionBlockPort>
-                    </functionBlockPort>
-                  </fbPortUsage>
-                </variableUsagesHasUsages>
                 <variableUsagesHasUsages Id="1583c114-ed4b-4d67-bf9f-a8f5de38900c">
                   <fbPortUsage Id="b2b549f0-ae05-43e0-b862-906355288aa9">
                     <functionBlockPort>
@@ -3420,8 +3411,8 @@
           <variableHasSourceUsages Id="977a46fb-a7e8-49c7-8196-cd85321e5dc9">
             <variableUsages Id="753b1209-931f-4bc4-b74a-93b24f875738">
               <usages>
-                <variableUsagesHasUsages Id="6d1b74dc-71ff-45b0-a684-3af31846af66">
-                  <aliasDeviceIoUsage Id="17c51f30-8893-40eb-8952-a686c3c7b33b" sdsId="15" channelId="4" functionId="1610679297" />
+                <variableUsagesHasUsages Id="9716cdc8-62e2-43c5-8ef8-62e665cf98f9">
+                  <aliasDeviceIoUsage Id="685dc7ad-1cb6-4c85-aa9a-b33b19446b9c" sdsId="15" channelId="4" functionId="1610679297" />
                 </variableUsagesHasUsages>
               </usages>
             </variableUsages>
@@ -3515,6 +3506,38 @@
                     <functionBlockPort>
                       <fbPortUsageReferencesFunctionBlockPort Id="5a64236b-38fe-4115-8246-cea1d1b49ae5">
                         <inPortMoniker name="//Network6/FBAnd5/AndIn1" />
+                      </fbPortUsageReferencesFunctionBlockPort>
+                    </functionBlockPort>
+                  </fbPortUsage>
+                </variableUsagesHasUsages>
+              </usages>
+            </variableUsages>
+          </variableHasTargetUsages>
+        </targetUsages>
+      </variable>
+    </safetyApplicationHasVariables>
+    <safetyApplicationHasVariables Id="d08aa17f-430c-40ad-b2cd-0f169e0340c2">
+      <variable Id="7d6a7bb2-9cf8-4db6-99a4-0da9d53dd146" name="UNMUTE_LC" isLocal="false">
+        <sourceUsages>
+          <variableHasSourceUsages Id="c496c0d8-a25f-4d46-8e11-9663f86f6370">
+            <variableUsages Id="9ba7a6ba-51a2-4ca6-86a8-c617381bef18">
+              <usages>
+                <variableUsagesHasUsages Id="1b18b34e-3de7-4d8b-9596-57a9a3316e0a">
+                  <aliasDeviceIoUsage Id="beeaa929-0e34-4dfd-bf77-ac6322acb9e3" sdsId="20" channelId="1" functionId="1131179973" />
+                </variableUsagesHasUsages>
+              </usages>
+            </variableUsages>
+          </variableHasSourceUsages>
+        </sourceUsages>
+        <targetUsages>
+          <variableHasTargetUsages Id="f6f705b9-a519-4900-9e3e-00297bb3c7fc">
+            <variableUsages Id="97c49638-5194-42b6-926c-7e0ae2ae7441">
+              <usages>
+                <variableUsagesHasUsages Id="5b56a919-9ff1-40be-8d58-e70664265aa0">
+                  <fbPortUsage Id="163091ac-5317-425c-8af6-228a7bceda2b">
+                    <functionBlockPort>
+                      <fbPortUsageReferencesFunctionBlockPort Id="c278dafb-a3ce-4dcc-9731-4acbbe5a0469">
+                        <inPortMoniker name="//Network6/FBAnd1/AndIn1" />
                       </fbPortUsageReferencesFunctionBlockPort>
                     </functionBlockPort>
                   </fbPortUsage>

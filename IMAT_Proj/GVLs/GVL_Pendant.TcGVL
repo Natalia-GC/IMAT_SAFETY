@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <GVL Name="GVL_Pendant" Id="{dd82f128-539b-4629-9056-e8ea75c42bb0}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+alive AT %I* : UINT; 
+buzzer AT %I* : UINT; 
+connectionBoxAddress AT %I* : UINT; 
+enSwitch AT %I* : BYTE; 
+//handWheelPosition AT %I* : DINT; 
+//handWheelPressed AT %I* : BOOL; 
+keyCount AT %I* : ARRAY [0..127] OF UINT; 
+keys AT %I* : ARRAY [ 0..127] OF BOOL; 
+keySwitch AT %I* : BYTE; 
+Leds AT %I* : ARRAY [0..15] OF BYTE ; 
+//pushButton AT %I* : BYTE; 
+//PushButtonLed AT %I* : BYTE; 
+//pushSwitch AT %I* : BYTE; 
+//pushSwitchLed AT %I* : BYTE; 
+//rotSwitch AT %I* : BYTE; 
+screenBrightness AT %I* : UINT; 
+screenTimeout AT %I* : UINT; 
+//selSwitch AT %I* : BYTE; 
+TypePlate AT %I* : ARRAY [0..5] OF UINT; 
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
