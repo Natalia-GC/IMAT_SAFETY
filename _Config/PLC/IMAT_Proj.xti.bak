@@ -7,7 +7,7 @@
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
 				<Var>
-					<Name>GVL_Safety.MONBLOCKSTATE</Name>
+					<Name>GVL_Safety.NORMALMODE_FB_STATE</Name>
 					<Type>USINT</Type>
 				</Var>
 			</Vars>
@@ -60,12 +60,11 @@
 	<Mappings>
 		<OwnerA Name="IMAT_Proj Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL6910)">
-				<Link VarA="PlcTask Inputs^GVL_Safety.MONBLOCKSTATE" VarB="Function Block Info Data^TwinSafeGroup1.Network3_OPMODE.FBMon4 Info Data^State"/>
+				<Link VarA="PlcTask Inputs^GVL_Safety.NORMALMODE_FB_STATE" VarB="Function Block Info Data^TwinSafeGroup1.Network3_OPMODE.FBAnd1 Info Data^State"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.ERRACK" VarB="StandardOutputs^Standard In Var 1" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_ENABLING" VarB="StandardOutputs^Standard In Var 18" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_LC" VarB="StandardOutputs^Standard In Var 17" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.SAFETYRUN" VarB="StandardOutputs^Standard In Var 4" Size="1"/>
-				<Link VarA="PlcTask Outputs^GVL_Safety.UNMUTE_ENABLING" VarB="StandardOutputs^Standard In Var 19" Size="1"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

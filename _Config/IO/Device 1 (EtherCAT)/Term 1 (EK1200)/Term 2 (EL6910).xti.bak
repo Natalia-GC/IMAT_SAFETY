@@ -30,28 +30,22 @@
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
-			<BitSize>4</BitSize>
+			<Name GUID="{18071995-0000-0000-0000-002000000003}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..2] OF BIT</Name>
+			<BitSize>3</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
 				<LBound>0</LBound>
-				<Elements>4</Elements>
+				<Elements>3</Elements>
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{2B008623-51EE-EF6A-ACDE-0017707F5BB8}" AutoDeleteType="true">INFODATA_FB_3</Name>
-			<BitSize>24</BitSize>
+			<Name GUID="{73F57572-A2C9-F88F-FFC6-9BA3A895E419}" AutoDeleteType="true">INFODATA_FB_1</Name>
+			<BitSize>8</BitSize>
 			<SubItem>
 				<Name>State</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>0</BitOffs>
-			</SubItem>
-			<SubItem>
-				<Name>Diag</Name>
-				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
-				<BitSize>16</BitSize>
-				<BitOffs>8</BitOffs>
 			</SubItem>
 		</DataType>
 		<DataType>
@@ -81,7 +75,7 @@
 			<SyncMan>001000012600010001000000000000000001001026010000</SyncMan>
 			<SyncMan>001100012200010002000000000000000001001122010000</SyncMan>
 			<SyncMan>001221002400010003000000000000000200001224010000</SyncMan>
-			<SyncMan>001d25002000010004000000000000000200001d20010000</SyncMan>
+			<SyncMan>001d23002000010004000000000000000200001d20010000</SyncMan>
 			<SyncMan>002e00002400000003000000000000000000002e24000000</SyncMan>
 			<SyncMan>002f00002000000004000000000000000000002f20000000</SyncMan>
 			<Fmmu>0000000000000000001200020100000001000000060000000200000000000000</Fmmu>
@@ -137,13 +131,16 @@
 				<Entry Name="Standard In Var 18" Index="#x6000" Sub="#x04">
 					<Type>BIT</Type>
 				</Entry>
+				<Entry Name="Standard In Var 19" Index="#x6000" Sub="#x05">
+					<Type>BIT</Type>
+				</Entry>
 				<Entry>
-					<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
 				</Entry>
 			</Pdo>
 			<Pdo Name="Function Block Info Data" Index="#x1bf8" Flags="#x2011" SyncMan="3">
-				<Entry Name="TwinSafeGroup1.Network3_OPMODE.FBMon4 Info Data" Index="#x7000" Sub="#x01">
-					<Type GUID="{2B008623-51EE-EF6A-ACDE-0017707F5BB8}">INFODATA_FB_3</Type>
+				<Entry Name="TwinSafeGroup1.Network3_OPMODE.FBAnd1 Info Data" Index="#x7000" Sub="#x01">
+					<Type GUID="{73F57572-A2C9-F88F-FFC6-9BA3A895E419}">INFODATA_FB_1</Type>
 				</Entry>
 			</Pdo>
 			<Pdo Name="TwinSAFE Group Info Data" Index="#x1bfa" Flags="#x2011" SyncMan="3">

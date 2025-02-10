@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <GVL Name="KeTop" Id="{ddc12e1e-8aed-4091-86db-38dc9dea5928}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+    alive : UINT;
+    keys: ARRAY[0..127] OF BOOL;
+    buzzer : UINT;
+    keySwitch : BYTE;
+    enSwitch : BYTE;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
