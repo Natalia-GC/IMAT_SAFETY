@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<safetyApplication Crc="3107594687" xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.4.0.0" Id="fa88b11f-5968-4dc5-b27e-669fafd229e1" name="" mapState="false" mapDiag="false" groupOrderId="1" passificationAllowed="false" temporaryDeactivationAllowed="false" permamentDeactivationAllowed="false" xmlid="0" analogFBOutputReplacementValues="Zero" verifyAnalogFBInputsIfStart="false" userFbId="00000000-0000-0000-0000-000000000000" xmlns="http://schemas.microsoft.com/dsltools/SafetyApplicationLanguage">
+  <networks>
+    <safetyApplicationHasNetworks Id="762a0d2f-7ec2-47c6-9760-861af0073437">
+      <Network Id="c4fafbff-9209-4601-936a-97fb62ea7047" name="Network1" networkName="Network1" intId="1" networkOrderId="0" />
+    </safetyApplicationHasNetworks>
+  </networks>
+  <twinSAFEGroupAliasPorts>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="05e699fd-6834-4f89-b2cd-f080cd85dbb4">
+      <twinSAFEGroupAliasPort Id="06438b9e-f1fc-4a64-8696-9cd86578cafe" name="RunStop" sdsId="0" channelId="0" portName="RunStop" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="bcad2bee-9eaf-4a1f-afb1-6fabcd8d6331">
+      <twinSAFEGroupAliasPort Id="5f4336f9-9bb3-4311-85b4-26552df57ece" name="ErrAck" sdsId="0" channelId="0" portName="ErrAck" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="1f3acb86-7d3c-43f7-a1cb-96b23286fb0e">
+      <twinSAFEGroupAliasPort Id="b74a6994-30a1-4cf3-a8ba-d77fd00348f5" name="ModuleFault" sdsId="0" channelId="0" portName="ModuleFault" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="b6183a5b-681e-4024-abc3-60a28b00fff1">
+      <twinSAFEGroupAliasPort Id="543d2a5a-e717-4979-8e25-3cb7959ed37a" name="FbErr" sdsId="0" channelId="0" portName="FbErr" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="0f94596a-6fae-4459-8450-edc5019357d6">
+      <twinSAFEGroupAliasPort Id="0e4b04a1-c1ee-4cb5-8ab8-73d2624f6ee4" name="ComErr" sdsId="0" channelId="0" portName="ComErr" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="ce128024-440e-4b0c-8439-a2fd0f3935c2">
+      <twinSAFEGroupAliasPort Id="c1295864-232e-4704-bd64-a2472b2f66ff" name="OutErr" sdsId="0" channelId="0" portName="OutErr" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="a92f8edc-de7d-4e00-81e0-dc04d36d6c7a">
+      <twinSAFEGroupAliasPort Id="b82784e1-c149-4013-8f54-d43dc6edc076" name="OtherErr" sdsId="0" channelId="0" portName="OtherErr" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="7be118d9-4df6-4484-a9bc-feeb15468aad">
+      <twinSAFEGroupAliasPort Id="1850707a-d6a0-4328-b7be-4b2d8629266c" name="ComStartup" sdsId="0" channelId="0" portName="ComStartup" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="ed00b36f-d4bd-4977-a1d9-7ecb852a1f08">
+      <twinSAFEGroupAliasPort Id="0cccb20e-52d7-4fc6-ac95-04ab81fffe1e" name="FbDeactive" sdsId="0" channelId="0" portName="FbDeactive" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="b286a8bf-d181-403c-b3c3-f2722fb2c8e4">
+      <twinSAFEGroupAliasPort Id="77f225da-b06a-4c50-941e-b78310fe58f1" name="FbRun" sdsId="0" channelId="0" portName="FbRun" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+    <safetyApplicationHasTwinSAFEGroupAliasPort Id="3137cc36-a326-4a59-b9ef-2f89032e57f0">
+      <twinSAFEGroupAliasPort Id="8d0422f3-a048-480f-a544-512aa93e3313" name="InRun" sdsId="0" channelId="0" portName="InRun" functionId="0" />
+    </safetyApplicationHasTwinSAFEGroupAliasPort>
+  </twinSAFEGroupAliasPorts>
+  <variables>
+    <safetyApplicationHasVariables Id="557b1bd4-65f0-4574-b7fe-5451f08bbba5">
+      <variable Id="39211efb-e735-47cf-80e7-7c372a97f117" name="GroupPort_ErrAck" isLocal="false">
+        <sourceUsages>
+          <variableHasSourceUsages Id="da710c16-301d-4dad-b71b-12bd0dc08673">
+            <variableUsages Id="1edf8480-169d-41fc-b728-04486356d35e">
+              <usages>
+                <variableUsagesHasUsages Id="12d0b863-3b30-4d17-b381-8f7e082e3ebf">
+                  <aliasDeviceIoUsage Id="e0d2d709-b74d-448d-a260-d986fe4b98f8" sdsId="23" channelId="1" functionId="1131179973" />
+                </variableUsagesHasUsages>
+              </usages>
+            </variableUsages>
+          </variableHasSourceUsages>
+        </sourceUsages>
+        <targetUsages>
+          <variableHasTargetUsages Id="91cc66cb-cf48-4d3b-904b-4e994974d723">
+            <variableUsages Id="0b54d851-87a9-4fe9-8715-2708ddcd7be2">
+              <usages>
+                <variableUsagesHasUsages Id="12c2c8f4-6814-40a2-b5e5-611e3370221f">
+                  <groupPortUsage Id="547cb199-7cd7-4cd7-ae2e-c4588cb7e63c">
+                    <twinSAFEGroupAliasPort>
+                      <groupPortUsageReferencesTwinSAFEGroupAliasPort Id="ab3a89ec-2ef3-4d9d-99f4-37ba7af6ed51">
+                        <twinSAFEGroupAliasPortMoniker name="//ErrAck" />
+                      </groupPortUsageReferencesTwinSAFEGroupAliasPort>
+                    </twinSAFEGroupAliasPort>
+                  </groupPortUsage>
+                </variableUsagesHasUsages>
+              </usages>
+            </variableUsages>
+          </variableHasTargetUsages>
+        </targetUsages>
+      </variable>
+    </safetyApplicationHasVariables>
+  </variables>
+</safetyApplication>

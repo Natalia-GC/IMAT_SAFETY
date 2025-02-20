@@ -59,8 +59,7 @@
 	</Project>
 	<Mappings>
 		<OwnerA Name="IMAT_Proj Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL6910)">
-				<Link VarA="PlcTask Inputs^GVL_Safety.NORMALMODE_FB_STATE" VarB="Function Block Info Data^TwinSafeGroup1.Network3_OPMODE.FBAnd1 Info Data^State"/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 9 (EK1200)^Term 9 (EL6910)">
 				<Link VarA="PlcTask Outputs^GVL_Safety.ERRACK" VarB="StandardOutputs^Standard In Var 1" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_ENABLING" VarB="StandardOutputs^Standard In Var 18" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_Safety.MUTE_LC" VarB="StandardOutputs^Standard In Var 17" Size="1"/>
